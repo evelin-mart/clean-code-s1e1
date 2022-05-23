@@ -6,26 +6,26 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="aaa">
+    <header class="aaa">
       <img class="img" src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
       <a class="more_inf" 
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label class="label" for="new-task">Add Item</label>
+    </header>
+    <main class="centered-main-page-element">
+      <div id="topSectionForAddingElementToList">
+        <h3 class="title title_add">Add Item</h3>
         <div class="task-row-wrapper">
           <input id="new-task" class="input task" type="text">
           <button class="button">Add</button>
         </div>
-      </p>
+      </div>
       <h3 class="title">Todo</h3>
       <ul class="list" id="incompleteTasks">
         <li class="list__item">
           <input type="checkbox">
-          <label class="label task">Pay Bills</label>
+          <p class="label task">Pay Bills</p>
           <input type="text" class="input task">
           <button class="button edit">Edit</button>
           <button class="button delete">
@@ -34,7 +34,7 @@
         </li>
         <li class="list__item editMode">
           <input type="checkbox">
-          <label class="label task">Go Shopping</label>
+          <p class="label task">Go Shopping</p>
           <input type="text" value="Go Shopping" class="input task">
           <button class="button edit">Save</button>
           <button class="button delete">
@@ -46,7 +46,7 @@
       <ul class="list" id="completed-tasks">
         <li class="list__item">
           <input type="checkbox" checked>
-          <label class="label task">See the Doctor</label>
+          <p class="label task">See the Doctor</p>
           <input type="text" class="input task">
           <button class="button edit">Edit</button>
           <button class="button delete">
@@ -54,7 +54,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
